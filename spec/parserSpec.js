@@ -18,7 +18,7 @@ describe('parse http', function() {
 
 	})
 	
-	it ('has case correction', function() {
+	it ('has case test', function() {
 		//arrange
 		const request = 'get / HTTP/1.1'
 		
@@ -34,14 +34,16 @@ describe('parse http', function() {
 
 	})
 	
-	it ('makes an other test', function() {
+	it ('sets content-type headers', function() {
 		//arrange
 		const request = 'GET / HTTP/1.1'
+        	content-type = text/html; charset=utf-8
+		output.headers.content-type
 		
 		//act
-		const output = parseHttp(request)
-		
-		//assert
+		const output.headers.content-type
+
+	        //assert
 		const expected = {
 			verb: 'GET',
 			path: '/',
