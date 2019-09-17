@@ -1,0 +1,19 @@
+{
+  "name": "httpparser",
+  "version": "1.0.0",
+  "description": "readme",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "jasmine": "^3.4.0",
+    "karma": "^4.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jasmine"
+  },
+  "author": "allen",
+  "license": "ISC"
+}
