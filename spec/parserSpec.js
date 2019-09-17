@@ -32,29 +32,23 @@ describe('parse http', function() {
 			version: 'HTTP/1.1'
 		}
 
-	})
+})
 	
 	it ('sets content-type headers', function() {
+
 		//arrange
-		const request = 'GET / HTTP/1.1'
-        	content-type = text/html; charset=utf-8
-		output.headers.content-type
+		const request = 'GET / HTTP/1.1\ncontent-type: text/HTML; charset = utf-8'
 		
 		//act
-		const output.headers.content-type
+		const output = parseHttp(request)
 
 	        //assert
 		const expected = {
 			verb: 'GET',
 			path: '/',
-			version: 'HTTP/1.1'
-		}
-
+			version: 'HTTP/1.1',
+			headers: {
+				'content type': 'text/HTML'
+			}}
 	})
-
-
-
-
-
 })
-
